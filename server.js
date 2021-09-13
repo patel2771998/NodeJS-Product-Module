@@ -13,10 +13,10 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
- const db = require("./app/models");
+const db = require("./app/models");
 
 db.sequelize.sync({ force: false }).then(() => {
-  });
+});
 
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to my first task" });

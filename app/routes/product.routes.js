@@ -7,8 +7,6 @@ module.exports = app => {
 
   router.get("/", products.findAll);
 
-  router.get("/:id/currency", products.currency)
-
   router.get("/:id", products.findOne);
 
   router.delete("/:id", products.delete);

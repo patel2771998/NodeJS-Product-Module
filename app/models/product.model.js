@@ -6,9 +6,9 @@ module.exports = (sequelize, Sequelize) => {
     productPrice: {
       type: Sequelize.INTEGER
     },
-    currensy: {
+    currency: {
       type: Sequelize.STRING,
-      defaultValue: 'USD',
+      defaultValue:"USD"
     },
     count: {
       type: Sequelize.INTEGER,
